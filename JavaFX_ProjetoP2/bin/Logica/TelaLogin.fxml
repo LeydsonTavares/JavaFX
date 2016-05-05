@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Logica.TelaLoginController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="695.0">
+         <children>
+            <Pane prefHeight="726.0" prefWidth="695.0">
+               <children>
+                  <ImageView fitHeight="879.0" fitWidth="1535.0" focusTraversable="true" layoutX="-359.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/planoDeFundo2.jpg" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#091928" height="328.0" layoutX="137.0" layoutY="278.0" stroke="BLACK" strokeType="INSIDE" width="394.0">
+                     <effect>
+                        <DropShadow color="WHITE" spread="0.52" />
+                     </effect>
+                  </Rectangle>
+                  <ImageView fitHeight="155.0" fitWidth="249.0" layoutX="238.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/logo2.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="loginUsuario" layoutX="199.0" layoutY="427.0" prefHeight="30.0" prefWidth="270.0" promptText="Login">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </TextField>
+                  <PasswordField fx:id="senhaUsuario" layoutX="199.0" layoutY="482.0" onKeyPressed="#senhaDigitada" prefHeight="30.0" prefWidth="270.0" promptText="Senha">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </PasswordField>
+                  <Button fx:id="botaoChamarTelaUsuario" layoutX="199.0" layoutY="534.0" mnemonicParsing="false" onAction="#ChamarTelaUsuario" onKeyPressed="#senhaDigitada" prefHeight="25.0" prefWidth="79.0">
+                     <tooltip>
+                        <Tooltip text="Acessar Conta" />
+                     </tooltip>
+                     <effect>
+                        <InnerShadow choke="1.0" color="#00fff2" height="255.0" radius="127.0" width="255.0" />
+                     </effect>
+                  </Button>
+                  <Button fx:id="botaoChamaTelaCriarUsuario" focusTraversable="false" layoutX="344.0" layoutY="534.0" mnemonicParsing="false" onAction="#ChamaTelaCriarUsuario" prefHeight="25.0" prefWidth="125.0" text="Criar Usuário">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Crie seu Usuário" />
+                     </tooltip>
+                  </Button>
+                  <Label layoutX="230.0" layoutY="302.0" text="Seja bem-vindo" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label layoutX="73.0" layoutY="194.0" text="SEA-Sistema de Empréstimo de Armários" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label layoutX="199.0" layoutY="362.0" prefHeight="45.0" prefWidth="270.0" text="** Para acessar o sistema entre com o seu Login e Senha" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="-352.0" layoutY="630.0" prefHeight="25.0" prefWidth="1400.0" />
+                  <Label layoutX="-264.0" layoutY="655.0" prefHeight="38.0" prefWidth="1005.0" text="© 2015 - 2015.  CESED-PB / LF.Systems. Todos direitos reservados.                    V.1  - 22/05/2015 " textFill="#eeeeee">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ImageView fitHeight="59.0" fitWidth="83.0" layoutX="832.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/logo2.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="929.0" layoutY="652.0" prefHeight="45.0" prefWidth="52.0" text="SEA" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Text disable="true" layoutX="219.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Entrar" wrappingWidth="39.747597098350525">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</VBox>

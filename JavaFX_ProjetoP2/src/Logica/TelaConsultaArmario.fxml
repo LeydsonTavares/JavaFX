@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Logica.TelaConsultaArmarioController">
+   <children>
+      <Pane>
+         <children>
+            <ImageView disable="true" fitHeight="881.0" fitWidth="1432.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/planoDeFundo2.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="butaosair" layoutX="1311.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltartelalogin" opacity="0.0" prefHeight="34.0" prefWidth="36.0" />
+            <TableView fx:id="tabelaArmarios" layoutX="88.0" layoutY="127.0" prefHeight="450.0" prefWidth="1200.0">
+               <effect>
+                  <DropShadow spread="0.6" />
+               </effect></TableView>
+            <Label layoutX="793.0" layoutY="14.0" prefHeight="34.0" prefWidth="189.0" text="Consultar armários" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="horaNaTela" layoutX="1087.0" layoutY="14.0" prefHeight="34.0" prefWidth="228.0" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="mensagemNaTela" layoutX="180.0" layoutY="14.0" prefHeight="34.0" prefWidth="480.0" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ImageView disable="true" fitHeight="28.0" fitWidth="28.0" layoutX="1315.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/Sair.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="botaoVoltarTela" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#voltarTelaUsuario" opacity="0.0" prefHeight="34.0" prefWidth="94.0" />
+            <ImageView disable="true" fitHeight="34.0" fitWidth="88.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/voltar%20(1).png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="-8.0" layoutY="60.0" opacity="0.5" prefHeight="28.0" prefWidth="1425.0" />
+            <Separator layoutX="-14.0" layoutY="625.0" prefHeight="0.0" prefWidth="1425.0" />
+            <Label layoutX="88.0" layoutY="646.0" prefHeight="34.0" prefWidth="1029.0" text="© 2015 - CESED-PB / LF.Systems. Todos direitos reservados.                    V.1  - 22/05/2015" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="1236.0" layoutY="639.0" prefHeight="49.0" prefWidth="56.0" text="SEA" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="75.0" layoutX="1153.0" layoutY="635.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/logo2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</VBox>

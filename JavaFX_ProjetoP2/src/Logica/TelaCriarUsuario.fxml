@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Logica.TelaCriarUsuarioController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="703.0" prefWidth="1401.0">
+         <children>
+            <Pane prefHeight="700.0" prefWidth="1400.0">
+               <children>
+                  <ImageView disable="true" fitHeight="900.0" fitWidth="1453.0" layoutX="-22.0" layoutY="-93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/planoDeFundo2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="147.0" fitWidth="171.0" layoutX="627.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/Criar%20Usuario.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="nomeUsuario" layoutX="534.0" layoutY="226.0" prefHeight="35.0" prefWidth="333.0" promptText="Nome usuário">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="loginUsuario" layoutX="534.0" layoutY="309.0" prefHeight="35.0" prefWidth="333.0" promptText="Login do usuário">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </TextField>
+                  <PasswordField fx:id="senhaUsuario" layoutX="534.0" layoutY="392.0" prefHeight="35.0" prefWidth="333.0" promptText="Senha do usuário">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </PasswordField>
+                  <PasswordField fx:id="confSenhaUsuario" layoutX="534.0" layoutY="475.0" prefHeight="35.0" prefWidth="333.0" promptText="Confirma senha">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </PasswordField>
+                  <Button fx:id="botãoVoltarTelaInicial" layoutX="1346.0" layoutY="6.0" mnemonicParsing="false" onAction="#VoltarTelaInicial" opacity="0.0" prefHeight="35.0" prefWidth="34.0" wrapText="true">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Sair" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="botaoInserirUsuario" layoutX="534.0" layoutY="538.0" mnemonicParsing="false" onAction="#InserirUsuario" opacity="0.0" prefHeight="52.0" prefWidth="62.0">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Inserir Usuário" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="botaoLimparText" layoutX="805.0" layoutY="538.0" mnemonicParsing="false" onAction="#LimparText" opacity="0.0" prefHeight="52.0" prefWidth="62.0">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                     <tooltip>
+                        <Tooltip text="Cancelar cadastro" />
+                     </tooltip>
+                  </Button>
+                  <Label fx:id="horaNaTela" layoutX="1096.0" layoutY="6.0" prefHeight="35.0" prefWidth="228.0" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ImageView disable="true" fitHeight="26.0" fitWidth="34.0" layoutX="1350.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/Sair.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="534.0" layoutY="357.0" prefHeight="35.0" prefWidth="123.0" text="Senha" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label layoutX="534.0" layoutY="274.0" prefHeight="35.0" prefWidth="123.0" text="Login" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label layoutX="534.0" layoutY="440.0" prefHeight="35.0" prefWidth="154.0" text="Confirma senha" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label layoutX="119.0" layoutY="6.0" prefHeight="35.0" prefWidth="171.0" text="Cadastro Usuário" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label layoutX="534.0" layoutY="191.0" prefHeight="35.0" prefWidth="123.0" text="Nome" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ImageView disable="true" fitHeight="45.0" fitWidth="54.0" layoutX="543.0" layoutY="542.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/Inserir.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView disable="true" fitHeight="45.0" fitWidth="62.0" layoutX="814.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/CancelarCadastro.png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutY="629.0" prefHeight="10.0" prefWidth="1439.0" />
+                  <Label alignment="CENTER" layoutX="534.0" layoutY="589.0" prefHeight="26.0" prefWidth="62.0" text="Inserir" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="797.0" layoutY="589.0" prefHeight="30.0" prefWidth="78.0" text="Cancelar" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="920.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="119.0" layoutY="652.0" prefHeight="35.0" prefWidth="1037.0" text="© 2015 -  CESED-PB / LF.Systems. Todos direitos reservados.                                V.1  - 22/05/2015" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1247.0" layoutY="647.0" prefHeight="45.0" prefWidth="54.0" text="SEA" textFill="#fcfcfc">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="62.0" layoutX="1182.0" layoutY="647.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/logo2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

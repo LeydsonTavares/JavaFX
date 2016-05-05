@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Logica.TelaDevolucaoController">
+   <children>
+      <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="1362.0">
+         <children>
+            <Pane prefHeight="730.0" prefWidth="1412.0">
+               <children>
+                  <ImageView disable="true" fitHeight="894.0" fitWidth="1437.0" layoutX="-29.0" layoutY="-107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/planoDeFundo2.jpg" />
+                     </image>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ImageView>
+                  <Label layoutX="103.0" layoutY="128.0" prefHeight="30.0" prefWidth="81.0" text="Registro" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Button fx:id="botaoDevolverChave" layoutX="191.0" layoutY="187.0" mnemonicParsing="false" onAction="#devolverChave" opacity="0.0" prefHeight="27.0" prefWidth="103.0" textFill="#3330da">
+                     <tooltip>
+                        <Tooltip text="Devolver registro" />
+                     </tooltip>
+                     <effect>
+                        <InnerShadow color="#0b1449" height="53.62" radius="18.155" />
+                     </effect>
+                  </Button>
+                  <Label layoutX="868.0" layoutY="19.0" text="Devolução" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label fx:id="nomeAluno" layoutX="217.0" layoutY="308.0" prefHeight="37.0" prefWidth="627.0" textFill="#fcfcfc">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="textoregistroChave" layoutX="217.0" layoutY="371.0" prefHeight="37.0" prefWidth="633.0" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dataDevolucao" layoutX="217.0" layoutY="426.0" prefHeight="45.0" prefWidth="627.0" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="botaoSair" layoutX="1312.0" layoutY="15.0" mnemonicParsing="false" onAction="#voltarTelaLogin" opacity="0.0" prefHeight="37.0" prefWidth="36.0" textFill="#3330da" />
+                  <Button fx:id="botaoLimparTexto" layoutX="334.0" layoutY="188.0" mnemonicParsing="false" onAction="#LimparTexto" opacity="0.0" prefHeight="25.0" prefWidth="93.0" textFill="#3330da">
+                     <tooltip>
+                        <Tooltip text="Cancelar devoluçaõ" />
+                     </tooltip>
+                     <effect>
+                        <InnerShadow color="#0b1449" height="53.62" radius="18.155" />
+                     </effect>
+                  </Button>
+                  <TextField fx:id="exemplar" layoutX="191.0" layoutY="128.0" onKeyPressed="#registroDigitado" prefHeight="30.0" prefWidth="236.0" promptText="Registro  armário" />
+                  <ImageView disable="true" fitHeight="30.0" fitWidth="36.0" layoutX="1315.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/Sair.png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="-18.0" layoutY="249.0" opacity="0.5" prefHeight="11.0" prefWidth="1430.0" />
+                  <Label text="Label" />
+                  <Label fx:id="TextoSejaBemVindo" layoutX="217.0" layoutY="17.0" prefHeight="30.0" prefWidth="515.0" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label fx:id="horaTela" layoutX="1101.0" layoutY="19.0" prefHeight="30.0" prefWidth="203.0" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="voltarTelaUsuario" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#voltarTela" opacity="0.0" prefHeight="30.0" prefWidth="93.0" />
+                  <ImageView disable="true" fitHeight="27.0" fitWidth="81.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/voltar%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Separator prefWidth="200.0" />
+                  <Separator layoutX="-18.0" layoutY="647.0" prefHeight="3.0" prefWidth="1436.0" />
+                  <Label layoutX="103.0" layoutY="667.0" prefHeight="30.0" prefWidth="947.0" text="© 2015 - CESED-PB / LF.Systems. Todos direitos reservados.                    V.1  - 22/05/2015" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <Label layoutX="1203.0" layoutY="655.0" prefHeight="54.0" prefWidth="54.0" text="SEA" textFill="#f8f8f8">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Label>
+                  <ImageView fitHeight="54.0" fitWidth="65.0" layoutX="1130.0" layoutY="655.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/logo2.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="textoDevolver" disable="true" fill="WHITE" layoutX="218.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Devolver" wrappingWidth="64.99996942281723">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+                  <Text disable="true" fill="WHITE" layoutX="369.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cancelar" wrappingWidth="64.99996942281723">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+                  <ImageView disable="true" fitHeight="27.0" fitWidth="30.0" layoutX="191.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/Inserir.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView disable="true" fitHeight="27.0" fitWidth="30.0" layoutX="342.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/CancelarCadastro.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</VBox>
